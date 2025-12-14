@@ -44,6 +44,9 @@ skip-excluded-dirs = false
 [tool.hatch.build.targets.wheel]
 packages = ["./utils"]
 
+[tool.hatch.build.targets.wheel.sources]
+"utils" = "docker_python_utils"
+
 [tool.ruff]
 line-length = 125
 target-version = "py312"
